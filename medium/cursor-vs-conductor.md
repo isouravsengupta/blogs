@@ -26,8 +26,8 @@ In my flow, I define graph-style pipelines (for example, analytics and deploymen
 
 In one run, a `data_enrichment_task` failed due to schema drift and was retried with a generated patch path. In another, I used the graph view to isolate throughput bottlenecks between edge preprocessing stages and tune filtering config. This is exactly where Conductor shines: seeing the whole system state, not just a single diff.
 
-![Conductor multi-agent orchestration view](./images/conductor-multi-agent-dag.png)
-![Conductor distributed edge deployment workflow](./images/conductor-edge-deployment-workflow.png)
+![Conductor Snowflake debug workflow](./images/conductor-snowflake-debug-workflow.png)
+![Conductor distributed edge deployment bottleneck workflow](./images/conductor-edge-deployment-bottleneck.png)
 
 ## Why Conductor Became My Go-To for Vibe Coding
 
