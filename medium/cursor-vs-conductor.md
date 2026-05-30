@@ -12,7 +12,7 @@ The simplest framing:
 
 If Cursor feels like a smarter IDE, Conductor feels like a control tower for AI agents.
 
-## How Conductor Is Used in Practice
+## My Workflow
 
 Conductor is most effective as an operations console for agent-driven workflows.
 
@@ -29,7 +29,7 @@ In one run, a `data_enrichment_task` failed due to schema drift and was retried 
 ![Conductor Snowflake debug workflow](./images/conductor-snowflake-debug-workflow-v2.png)
 ![Conductor distributed edge deployment bottleneck workflow](./images/conductor-edge-deployment-bottleneck-v2.png)
 
-## Why Conductor Works Well for Vibe Coding
+## Why Both Became My Go-To Vibe Coding Tools
 
 When the goal is exploration, parallel branches, and rapid experimentation, Conductor maps well to that workflow.
 
