@@ -12,6 +12,23 @@ After using both, here is the simplest framing:
 
 If Cursor feels like a smarter IDE, Conductor feels like a control tower for AI agents.
 
+## How I Actually Use Conductor (Real Workflow)
+
+I do not use Conductor like a chat toy. I use it like an operations console for agent systems.
+
+In my flow, I define graph-style pipelines (for example, analytics and deployment DAGs), then let agents run in parallel while I supervise:
+
+- live node status (complete, running, waiting, retrying)
+- agent-to-agent handoffs between stages
+- quick diagnosis when one node fails or bottlenecks
+- checks panel for what passed vs failed before merge decisions
+- terminal logs for run-level context without leaving the interface
+
+In one run, a `data_enrichment_task` failed due to schema drift and was retried with a generated patch path. In another, I used the graph view to isolate throughput bottlenecks between edge preprocessing stages and tune filtering config. This is exactly where Conductor shines: seeing the whole system state, not just a single diff.
+
+![Conductor multi-agent orchestration view](./images/conductor-multi-agent-dag.png)
+![Conductor distributed edge deployment workflow](./images/conductor-edge-deployment-workflow.png)
+
 ## Why Conductor Became My Go-To for Vibe Coding
 
 When I am in exploration mode, trying ideas and parallel branches, Conductor feels natural.
@@ -46,6 +63,20 @@ Its core strengths are editor-native:
 
 If Conductor is orchestration-first, Cursor is execution-first.  
 You stay close to the code, which matters for architecture, debugging, and nuanced refactors.
+
+## How I Use Cursor in the Same Workflow
+
+My practical setup is Conductor for orchestration and Cursor for precision execution.
+
+I use Cursor when I need to:
+
+- tighten implementation details after agent-generated drafts
+- do targeted rewrites quickly with natural-language instructions
+- reshape long-form content (like this article) for clarity and CTR
+- structure repository content (`medium`, `linkedin`, `x`) so publishing assets stay clean
+- prepare git-ready updates and final review before commit/push
+
+So for me, Cursor is the high-speed editing and refinement layer, while Conductor is the multi-agent control layer.
 
 ## Quick Comparison
 
